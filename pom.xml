@@ -1,0 +1,42 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>maven.gov.in</groupId>
+  <artifactId>mavenproject1</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>mavenproject</name>
+  <url>http://maven.apache.org</url>
+  <scm>
+    <connection>scm:svn:http://localhost/mavenproject/</connection>
+    <developerConnection>scm:svn:http://localhost/mavenproject/</developerConnection>
+    <url>http://localhost/mavenproject/</url>
+  </scm>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  <distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>VENKY-PC-releases</name>
+        <url>http://localhost:9090/artifactory/mavenproject1</url>
+    </repository>
+    <snapshotRepository>
+        <id>central</id>
+        <name>VENKY-PC-snapshots</name>
+        <url>http://localhost:9090/artifactory/mavenproject1</url>
+    </snapshotRepository>
+</distributionManagement>
+</project>
